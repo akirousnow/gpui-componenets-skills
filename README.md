@@ -12,8 +12,8 @@
 
 覆盖内容：
 
-- **7 篇基础指南**（`guide/`）：Getting Started、Installation、Icons & Assets、Context、ElementId、Theme、Root View。
-- **57 个组件**（`components/`）：每个都有独立详情文档，包含简介、核心 API 表、Rust 代码示例与备注。
+- **7 篇基础指南**（`skills/gpui-components/guide/`）：Getting Started、Installation、Icons & Assets、Context、ElementId、Theme、Root View。
+- **57 个组件**（`skills/gpui-components/components/`）：每个都有独立详情文档，包含简介、核心 API 表、Rust 代码示例与备注。
 
 ## 安装
 
@@ -33,7 +33,7 @@ npx skills add akirousnow/gpui-componenets-skills
 
 ## 组件目录
 
-> 完整索引见 [`SKILL.md`](SKILL.md)，此处按类别概览。
+> 完整索引见 [`SKILL.md`](skills/gpui-components/SKILL.md)，此处按类别概览。
 
 ### 基础元素
 
@@ -69,14 +69,15 @@ Clipboard · Settings · TitleBar
 
 ## 如何使用
 
-1. 在 [`SKILL.md`](SKILL.md) 的索引表中按类别定位目标组件。
-2. 打开对应 `components/<name>.md` 阅读核心 API 与代码示例。
+1. 在 [`SKILL.md`](skills/gpui-components/SKILL.md) 的索引表中按类别定位目标组件。
+2. 打开对应 `skills/gpui-components/components/<name>.md` 阅读核心 API 与代码示例。
 3. 直接复用示例代码（均提取自官方文档原文），按需调整。
 
 ## 备注与约定
 
-- 组件详情文档位于 `components/` 目录，文件名采用 kebab-case（如 `alert-dialog.md`、`color-picker.md`）。
-- 基础指南位于 `guide/` 目录。
+- 组件详情文档位于 `skills/gpui-components/components/` 目录，文件名采用 kebab-case（如 `alert-dialog.md`、`color-picker.md`）。
+- 基础指南位于 `skills/gpui-components/guide/` 目录。
+- 仓库结构遵循 [skills.sh](https://skills.sh) / Cursor Agent Skill 约定：skill 位于 `skills/<name>/` 子目录，确保 `npx skills add` 能完整打包 `SKILL.md` 及其引用的 `components/`、`guide/` 资源。
 - 代码示例均来自官方文档，可直接参考使用。
 - 官方文档：<https://longbridge.github.io/gpui-component/docs/components>
 
